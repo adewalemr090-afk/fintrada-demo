@@ -1,0 +1,13 @@
+# FINTRADA production checklist
+- Obtain Nigerian legal/regulatory advice and required approvals/registrations.
+- Replace SQLite with PostgreSQL for production.
+- Implement double-entry accounting and immutable ledger controls.
+- Connect only verified payment providers and validate webhooks.
+- Implement KYC/AML and sanctions screening.
+- Add 2FA and granular admin roles.
+- Add treasury approval and reconciliation controls.
+- Connect licensed/appropriate market-data providers.
+- Use compliant digital-asset custody/exchange infrastructure where applicable.
+- Enforce HTTPS, secure cookies, rate limiting, validation, security headers and backups.
+- Have investment terms, risk disclosures, fees, maturity and return calculations reviewed professionally.
+- Never present simulated market data or guaranteed returns as real.

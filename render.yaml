@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: fintrada-demo
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: DEMO_MODE
+        value: true
+      - key: DEMO_EMAIL
+        value: demo@fintrada.test
+      - key: DEMO_PASSWORD
+        value: Demo_12345!
+      - key: PUBLIC_URL
+        sync: false
